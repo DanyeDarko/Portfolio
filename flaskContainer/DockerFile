@@ -1,3 +1,0 @@
-FROM clearlinux/python:3.5 AS flaskPyra.md
-WORKDIR /app
-ADD . /app 
