@@ -1,0 +1,27 @@
+<!-- HEREDA EL CONETENIDO DE LA PAGINA 'public_template'-->
+{% extends "public/public_templates/public_template.html" %}
+
+{% block title %} Pyra.md {% endblock %}
+
+{% block main %}
+
+<table class="responsive-table">
+  <thead>
+    <tr>
+      {% for llave in result%}
+      <th data-field="id">{{ llave }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      {% for clave  in result %}
+      <td>{{result[clave]}}</td>
+      {% endfor %}
+    </tr>
+    
+  </tbody>
+</table>
+
+{% endblock %}
