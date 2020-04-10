@@ -1,5 +1,23 @@
-version: "3.7"
+version: '3.7'
 
 services: 
-    flaskApi:
-        build: ./flaskContainer
+    flask:
+        build: ./flask
+        container_name: flask
+        hostname: flask
+        restart: always
+        environment: 
+            - APP_NAME=portfolioYe
+        expose :
+            - 8080 
+       
+        depends_on:
+            - nginx    
+    nginx:
+        build: ./nginx
+        container_name: nginx
+        hostname: nginx
+        ports:
+            - 80
+        expose: 
+            - 80
