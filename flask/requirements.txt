@@ -15,3 +15,4 @@ virtualenv==20.0.17
 Werkzeug==1.0.1
 zipp==1.2.0
 uwsgi
+python-dotenv
