@@ -1,4 +1,14 @@
-env
-__pycache__
+env/
+__pycache__/
+instance/
+.pytest_cache/
+htmlcov/
+dist/
+build/
+*.egg-info/
 
 *settings.json
+*.pyc
+.coverage
+
+
