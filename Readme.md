@@ -1,5 +1,6 @@
 # Portafolio
-## ESTRUCTURA APP 
+## ESTRUCTURA APP
+''' 
 flask
 ├── app/
 │   ├── __init__.py
@@ -29,7 +30,7 @@ flask
 ├── run.py
 ├── requirements.txt
 └── .dockerignore
-
+'''
 nginx
 ├── Dockerfile
 └── nginx.conf
