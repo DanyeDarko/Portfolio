@@ -27,6 +27,7 @@ flask
 ├── env/
 ├── Dockerfile
 ├── app.ini
+├── .env
 ├── run.py
 ├── requirements.txt
 └── .dockerignore
