@@ -13,15 +13,6 @@
       <link rel="stylesheet" href="css/style.css">
     <!-- Used as an example only to position the footer at the end of the page.
     You can delete these styles or move it to your custom css file -->
-    <style>
-      body {
-        display: flex;
-        min-height: 100vh;
-        flex-direction: column;
-        }
-      main {
-        flex: 1 0 auto;
-      }
     </style>
   </head>
   <body>
@@ -59,25 +50,8 @@
     </header>
       <main>
       <!-- Your content here -->
-      <table class="centered">
-          <thead>
-            
-              <tr>
-                {% for llave in result%}
-                  <th data-field="id">{{ llave }}</th>
-                  {% endfor %}     
-              </tr>
-              
-          </thead>
-          <tbody>
-              <tr>
-                {% for clave  in result %}
-                  <td>{{result[clave]}}</td>
-                {% endfor %} 
-              </tr>
-          </tbody>
-          
-      </table>
+      
+      
     </main>
     <footer class="page-footer cyan">
       <div class="container">
