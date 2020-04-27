@@ -4,22 +4,4 @@
 <!-- REFERENCIA AL CODIGO 'block title' EN LA ETIQUETA 'title' de 'user_template' PERMITE CAMBIAR SU CONTENIDO-->
 {% block title %} Dental Real {% endblock %}
 
-<!-- REFERENCIA AL CODIGO 'block main' EN LA ETIQUETA 'main' de 'user_template' PERMITE CAMBIAR SU CONTENIDO-->
-{% block main %}
-<table class="responsive-table">
-  <thead>
-    <tr>
-      {% for llave in result%}
-      <th data-field="id">{{ llave }}</th>
-      {% endfor %}
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      {% for clave  in result %}
-      <td>{{result[clave]}}</td>
-      {% endfor %}
-    </tr>
-  </tbody>
-</table>
-{% endblock %}
+
