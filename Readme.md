@@ -1,19 +1,19 @@
 Real Dental App 
 =========
 
-Simple aplicacion de gestion optima de recursos Medicos Odontologicos mediante aplicativo web con Flask/WSGI, balanceo de carga Nginx y almanecaje de Datos por postgres;Ejecutandose en una estancias de microservicios  compuestas de multiples contenedores.
+Simple aplicacion de gestion optima de recursos Medicos Odontologicos mediante aplicativo web con Flask/WSGI, balanceo de carga Nginx y almacenaje de datos por postgres;Ejecutandose en una estancias de microservicios  compuestas de multiples contenedores.
 
 Comenzando 🚀
 ---------------
 
-Instala Docker [Docker Desktop](https://www.docker.com/products/docker-desktop) para distribuciones Mac o Windows. [Docker Compose](https://docs.docker.com/compose) En sistemas operativos linux ,se encuentra integrada por defecto,asegurate de ejecutar la version actual[Compose](https://docs.docker.com/compose/install/). 
+Instala [Docker Desktop](https://www.docker.com/products/docker-desktop) para sistemas operativos  *Mac* o *Windows*. [Docker Compose](https://docs.docker.com/compose) se encuentra integrado en la instalacion de docker , en sistemas operativos *linux* asegurate de [Instalar la version correspondiente de compose](https://docs.docker.com/compose/install/) segun tu entorno de trabajo. 
 
 
 ## Contenedores Linux
 
-El stack de contenedores Linux usa **Python-->Flask/WSGI**, **Nginx** , con **Redis** para messaging y **Postgres** para almacenamiento(opcionalmente **MySQL**)
+El stack de contenedores Linux usa **Python-->Flask/WSGI**, **Nginx** , con **Redis** para mensajes y **Postgres** para almacenamiento(opcionalmente **MySQL**)
 
-> Si estas utilizando **Docker Desktop** en *Windows* [Docker Desktop on Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows), es posible correr estancias de contenedores linux ,cambiando el tipo de contenedor [switching to Linux containers](https://docs.docker.com/docker-for-windows/#switch-between-windows-and-linux-containers).
+> Si estas utilizando [Docker Desktop en Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows), es posible correr estancias de contenedores linux , [cambiando la arquitectura de los contenedores](https://docs.docker.com/docker-for-windows/#switch-between-windows-and-linux-containers).
 
 Ejecuta en el directirio raiz del proyecto:
 ```
