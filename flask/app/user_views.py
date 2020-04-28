@@ -14,6 +14,7 @@ def index_login():
 @app.route('/dashboard')
 def user_dashboard():
    user = {'Nombre':'Daniel','Apellido':'Brito','Score':50}
+   datos_consultorio = {'num_citas':'20','facturas_pendientes':['cdf1929','cdf3928','cdfg4940'],'Encargado':'Dr Jayr Mizael'}
    return render_template('public/user_dashboard.html', result =  user)
 
 
