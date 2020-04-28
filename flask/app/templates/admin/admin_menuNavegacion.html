@@ -1,0 +1,57 @@
+ 
+ <!-- LISTA DESPLEGABLE SERVICIOS -->
+ <ul id="menuServicios" class="dropdown-content">
+    <li><a href="#!">Inventario</a></li>
+    <li><a href="#!">Citas <span class="new badge blue lighten-1" data-badge-caption="Hoy" >{{data[1]['numero_citas']}}</span></a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Laboratorio  </a></li>
+    <li><a href="#!">Cuentas</a></li>
+  </ul>
+
+  <nav>
+    <div class="nav-wrapper blue lighten-2">
+      <a href="#!" class="brand-logo ">Dental Real</a>
+      <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#modalConfiguracion" class="modal-trigger">Configuracion</a></li>
+        <li class="divider"></li>
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-button" href="#!" data-activates="menuServicios">Servicios<i
+              class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-menu">
+        <li>
+          <div class="userView">
+            <div class="background">
+              <img src="http://lorempixel.com/output/abstract-q-c-640-480-10.jpg" alt="Background Sidenav">
+            </div>
+            <a href="#!user"><img class="circle" src="http://lorempixel.com/output/people-q-c-640-480-9.jpg"
+                alt="User Image Sidenav"></a>
+            <a href="#!name"><span class="white-text name">{{data[0]['nombre_user']}}</span></a>
+            <a href="#!email"><span class="white-text email">{{data[0]['corre']}}</span></a>
+          </div>
+        </li>
+        <li><a href="#"> Citas  <span class="new badge blue lighten-1" data-badge-caption="Hoy" >{{data[1]['numero_citas']}}</span></a></li>
+        <li><a href="#">opcion a</a></li>
+        <li><a href="#">opcion b</a></li>
+        <li><a href="#">opcion c</a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+
+  <div id="modalConfiguracion" class="modal">
+    <div class="modal-content">
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+        <p> Sequi a sint suscipit, aliquam quis facere necessitatibus nam, doloremque possimus saepe impedit dolore
+            atque
+            illo!
+            Consequuntur praesentium sit voluptatem debitis voluptatum.
+        </p>
+    </div>
+    <div class="modal-footer">
+        <a href="" class="btn modal-close blue lighten-2">cerrar</a>
+    </div>
+
+</div>
